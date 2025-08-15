@@ -1,0 +1,76 @@
+<BuyVehiclesModsPartsOnDayOne>
+
+<!-- Set all vehicle and vehicle parts to be available at all game stages. -->
+<set xpath="/traders/traderstage_templates/traderstage_template[@name='vehicleTier0' or @name='vehicleTier1' or @name='vehicleTier2' or @name='vehicleTier3' or @name='vehicleTier4' or @name='vehicleTier5']">
+	<entry min="1" max="9999" quality="0"/>
+</set>
+
+<!-- Set all Vehicle mods to be available at all game stages. -->
+
+<append xpath="/traders/traderstage_templates">
+		<traderstage_template name="modVehicleFLTR">
+			<entry min="1" max="999999" quality="0"/>
+		</traderstage_template>
+</append>
+
+<!-- Set all vanilla vehicles and vehicle parts, such as chassis, handlebars and Accessories to be always for sale. Engine and wheels available in rareTools group. -->
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
+		<!-- *** BICYCLE -->
+			<item name="vehicleBicycleChassis"/>
+			<item name="vehicleBicycleHandlebars"/>
+			<item name="vehicleBicyclePlaceable"/>
+		<!-- *** MINIBIKE -->
+			<item name="vehicleMinibikeChassis"/>
+			<item name="vehicleMinibikeHandlebars"/>
+			<item name="vehicleMinibikePlaceable"/>
+		<!-- *** MOTORCYCLE -->
+			<item name="vehicleMotorcycleChassis"/>
+			<item name="vehicleMotorcycleHandlebars"/>
+			<item name="vehicleMotorcyclePlaceable"/>
+		<!-- *** 4x4 -->
+			<item name="vehicleTruck4x4Chassis"/>
+			<item name="vehicleTruck4x4Accessories"/>
+			<item name="vehicleTruck4x4Placeable"/>
+		<!-- *** GYRO -->
+			<item name="vehicleGyroCopterChassis"/>
+			<item name="vehicleGyroCopterAccessories"/>
+			<item name="vehicleGyrocopterPlaceable"/>
+</append>
+
+<!-- Set all vehicle mods to be always for sale. -->
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
+			<item name="modVehicleFuelSaver"/>
+			<item name="modVehicleOffRoadHeadlights"/>
+			<item name="modVehicleSuperCharger"/>
+			<item name="modVehicleExpandedSeat"/>
+			<item name="modVehicleReserveFuelTank"/>
+			<item name="modVehiclePlow"/>
+			<item name="modVehicleArmor"/>
+</append>
+
+<!-- Add wheels to rare tools group. -->
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']">
+	<item name="vehicleWheels"/>
+</append>
+
+<!-- Remove Bob's specialty items to avoid duplication. -->
+<remove xpath="/traders/trader_info[@id='6']/trader_items/item[@group='groupVehicles']" />
+
+<!-- Remove vehicles from traderGeneral group to avoid duplication. -->
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='traderGeneral']/item[@group='groupVehicles']" />
+
+<!-- Set all horses from Telric's Horses to be always for sale. -->
+<conditional>
+	<if cond="mod_loaded('Telrics_Horses_V2')">
+		<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
+			<item name="vehicleLightBrownHorsePlaceable"/>
+			<item name="vehicleDarkBrownHorsePlaceable"/>
+			<item name="vehicleMilkBrownHorsePlaceable"/>
+			<item name="vehicleWhiteDotHorsePlaceable"/>
+			<item name="vehicleWhiteHorsePlaceable"/>
+			<item name="vehicleYellowHorsePlaceable"/>
+		</append>
+	</if>
+</conditional>
+
+</BuyVehiclesModsPartsOnDayOne>

@@ -1,0 +1,8 @@
+<BuyVehicleModsOnDayOne>
+
+
+<setattribute xpath="/item_modifiers/item_modifier[starts-with(@name,'modVehicle')]/property[@name='TraderStageTemplate']" name="value">modVehicleFLTR</setattribute>
+
+<!-- <setattribute xpath="/item_modifiers/item_modifier[@name='modVehicleFuelSaver']/property[@name='TraderStageTemplate']" name="value">modVehicleFLTR</setattribute> -->
+
+</BuyVehicleModsOnDayOne>
