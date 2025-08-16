@@ -121,13 +121,7 @@
 
 <!-- ***  TheMeanOnes ServerSide Vehicles V2  -->
 
-<!-- TO DO: move functionality to separate mod. -->
-
-<conditional>
-	<if cond="mod_loaded('TheMeanOnesServerSideVehiclesv2')">
-		<include filename="OtherVehicleMods/TheMeanOnesServerSideVehiclesv2/traders.xml" />
-	</if>
-</conditional>
+<!-- TO DO: See github -->
 
 <!-- Use conditional with or without includes. -->
 

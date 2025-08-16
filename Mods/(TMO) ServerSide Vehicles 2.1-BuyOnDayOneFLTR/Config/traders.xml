@@ -7,9 +7,14 @@
 
 <!-- *** TMO vehicles -->
 
-<!-- Set all TMO vehicles to be always for sale. -->
-<!-- TO DO: add gunBotT3JunkDrone  -->
+<!-- Set all vehicles to be for sale at all game stages. Using vehicleTierXX to target vehicles. Some TMO vehicles in items.xml don't have a traderstage template specified, but it doesn't affect the functionality of this mod. -->
+<set xpath="/traders/traderstage_templates/traderstage_template[@name='vehicleTier0' or @name='vehicleTier1' or @name='vehicleTier2' or @name='vehicleTier3' or @name='vehicleTier4' or @name='vehicleTier5']">
+	<entry min="1" max="999999" quality="0"/>
+</set>
 
+<!-- Set all TMO vehicles to be always for sale. Engine and wheels available in rareTools group. See below. -->
+
+<!-- TO DO: add gunBotT3JunkDrone  -->
 <append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
 		<item name="TheMeanOne_FlyableDronePlaceable"/>
 		<item name="TheMeanOne_FlyableVanPlaceable"/>
@@ -23,8 +28,6 @@
 		<item name="vehicleTM1GhoulCruiserPlaceable"/>
 		<item name="vehicleTM1MeanBusPlaceable"/>
 		<item name="vehicleTm1Flyer1Placeable"/>
-		
 </append>
-
 
 </BuyVehiclesModsPartsOnDayOne>

@@ -20,13 +20,8 @@
 
 <!-- *** TMO Vehicles  -->
 
-<!-- TO DO: move functionality to separate mod -->
+<!-- Functionality moved to xxx-BuyOnDayOneFLTR https://github.com/flatlanderone/ and Nexus Mods.  -->
 
-<conditional>
-	<if cond="mod_loaded('TheMeanOnesServerSideVehiclesv2')">
-		<include filename="OtherVehicleMods/TheMeanOnesServerSideVehiclesv2/items.xml" />
-	</if>
-</conditional>
 
 <!-- *** NON VANILLA VEHICLE PARTS (custom Chassis, Handlebars and Accessories) -->
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="V2BuyOnDayOneTMOVehiclesFLTR" />
+	<DisplayName value="Buy On Day One - TMO Vehicles" />
+	<Description value="All vehicles from the (TMO) ServerSide Vehicles 2.1 mod can be purchased at the trader from day 1." />
+	<Author value="flatlander" />
+	<Version value="0.1.0.0" />
+	<Website value="https://github.com/flatlanderone/" />
+</xml>
