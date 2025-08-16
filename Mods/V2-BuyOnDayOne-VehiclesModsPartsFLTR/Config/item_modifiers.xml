@@ -1,8 +1,13 @@
-<BuyVehicleModsOnDayOne>
+<BuyVehiclesModsPartsOnDayOne>
 
+<!-- *** VANILLA VEHICLE MODS -->
+
+<!-- Set modVehicleFLTR to allow targeting vehicle mods in traders.xml -->
 
 <setattribute xpath="/item_modifiers/item_modifier[starts-with(@name,'modVehicle')]/property[@name='TraderStageTemplate']" name="value">modVehicleFLTR</setattribute>
 
-<!-- <setattribute xpath="/item_modifiers/item_modifier[@name='modVehicleFuelSaver']/property[@name='TraderStageTemplate']" name="value">modVehicleFLTR</setattribute> -->
+<!-- *** NON VANILLA VEHICLE MODS  -->
 
-</BuyVehicleModsOnDayOne>
+<!-- Use conditional with or without includes. -->
+
+</BuyVehiclesModsPartsOnDayOne>

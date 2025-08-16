@@ -1,57 +1,91 @@
 <BuyVehiclesModsPartsOnDayOne>
 
-<!-- Set all vehicle and vehicle parts to be available at all game stages. -->
+<!-- Approach
+1. Set items to be for sale at all game stages in traders.xml.
+2. Set items to be always for sale by adding them to traderAlways trader_item_group in traders.xml.
+3. If needed (e.g. because traderstage_template too extensive), create new traderstage_template with distinct attribute (e.g. partVehicleFLTR or modVehicleFLTR) in traders.xml and apply new attribute to items in items.xml and item_modifiers.xml. -->
+
+<!-- *** VANILLA VEHICLES  -->
+
+<!-- Set all vehicles to be for sale at all game stages. Using vehicleTier0 to target vehicles.-->
 <set xpath="/traders/traderstage_templates/traderstage_template[@name='vehicleTier0' or @name='vehicleTier1' or @name='vehicleTier2' or @name='vehicleTier3' or @name='vehicleTier4' or @name='vehicleTier5']">
-	<entry min="1" max="9999" quality="0"/>
+	<entry min="1" max="999999" quality="0"/>
 </set>
 
-<!-- Set all Vehicle mods to be available at all game stages. -->
-
-<append xpath="/traders/traderstage_templates">
-		<traderstage_template name="modVehicleFLTR">
-			<entry min="1" max="999999" quality="0"/>
-		</traderstage_template>
+<!-- Set all vehicles to be always for sale. Engine and wheels available in rareTools group. See below. -->
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
+	<!-- *** BICYCLE -->
+		<item name="vehicleBicyclePlaceable"/>
+	<!-- *** MINIBIKE -->
+		<item name="vehicleMinibikePlaceable"/>
+	<!-- *** MOTORCYCLE -->
+		<item name="vehicleMotorcyclePlaceable"/>
+	<!-- *** 4x4 -->
+		<item name="vehicleTruck4x4Placeable"/>
+	<!-- *** GYRO -->
+		<item name="vehicleGyrocopterPlaceable"/>
 </append>
 
-<!-- Set all vanilla vehicles and vehicle parts, such as chassis, handlebars and Accessories to be always for sale. Engine and wheels available in rareTools group. -->
+<!-- *** VANILLA VEHICLE PARTS (Chassis, Handlebars and Accessories) -->
+
+<!-- Set all vehicle parts to be for sale at all game stages. Using partVehicleFLTR to target vehicle parts. partVehicleFLTR is set in items.xml -->
+<append xpath="/traders/traderstage_templates">
+	<traderstage_template name="partVehicleFLTR">
+		<entry min="1" max="999999" quality="0"/>
+	</traderstage_template>
+</append>
+
+<!-- Set vehicle parts, such as Chassis, Handlebars and Accessories to be always for sale. Engine and wheels are still available in rareTools group. -->
+
 <append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
-		<!-- *** BICYCLE -->
-			<item name="vehicleBicycleChassis"/>
-			<item name="vehicleBicycleHandlebars"/>
-			<item name="vehicleBicyclePlaceable"/>
-		<!-- *** MINIBIKE -->
-			<item name="vehicleMinibikeChassis"/>
-			<item name="vehicleMinibikeHandlebars"/>
-			<item name="vehicleMinibikePlaceable"/>
-		<!-- *** MOTORCYCLE -->
-			<item name="vehicleMotorcycleChassis"/>
-			<item name="vehicleMotorcycleHandlebars"/>
-			<item name="vehicleMotorcyclePlaceable"/>
-		<!-- *** 4x4 -->
-			<item name="vehicleTruck4x4Chassis"/>
-			<item name="vehicleTruck4x4Accessories"/>
-			<item name="vehicleTruck4x4Placeable"/>
-		<!-- *** GYRO -->
-			<item name="vehicleGyroCopterChassis"/>
-			<item name="vehicleGyroCopterAccessories"/>
-			<item name="vehicleGyrocopterPlaceable"/>
+<!-- *** BICYCLE PARTS -->
+	<item name="vehicleBicycleChassis"/>
+	<item name="vehicleBicycleHandlebars"/>
+<!-- *** MINIBIKE PARTS -->
+	<item name="vehicleMinibikeChassis"/>
+	<item name="vehicleMinibikeHandlebars"/>
+<!-- *** MOTORCYCLE PARTS -->
+	<item name="vehicleMotorcycleChassis"/>
+	<item name="vehicleMotorcycleHandlebars"/>
+<!-- *** 4x4 PARTS -->
+	<item name="vehicleTruck4x4Chassis"/>
+	<item name="vehicleTruck4x4Accessories"/>
+<!-- *** GYRO PARTS -->
+	<item name="vehicleGyroCopterChassis"/>
+	<item name="vehicleGyroCopterAccessories"/>
+</append>
+
+<!-- *** VANILLA VEHICLE MODS -->
+
+<!-- Set all Vehicle mods to be for sale at all game stages. modVehicleFLTR is set in item_modifiers.xml  -->
+
+<!-- NOTE: In vanilla, only vehicle mod schematics are for sale. Mods must be looted or crafted. Oversight?   -->
+
+<append xpath="/traders/traderstage_templates">
+	<traderstage_template name="modVehicleFLTR">
+		<entry min="1" max="999999" quality="0"/>
+	</traderstage_template>
 </append>
 
 <!-- Set all vehicle mods to be always for sale. -->
 <append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
-			<item name="modVehicleFuelSaver"/>
-			<item name="modVehicleOffRoadHeadlights"/>
-			<item name="modVehicleSuperCharger"/>
-			<item name="modVehicleExpandedSeat"/>
-			<item name="modVehicleReserveFuelTank"/>
-			<item name="modVehiclePlow"/>
-			<item name="modVehicleArmor"/>
+	<item name="modVehicleFuelSaver"/>
+	<item name="modVehicleOffRoadHeadlights"/>
+	<item name="modVehicleSuperCharger"/>
+	<item name="modVehicleExpandedSeat"/>
+	<item name="modVehicleReserveFuelTank"/>
+	<item name="modVehiclePlow"/>
+	<item name="modVehicleArmor"/>
 </append>
 
-<!-- Add wheels to rare tools group. -->
+<!-- *** WHEELS -->
+
+<!-- Add wheels to rareTools group to maintain their availability. -->
 <append xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']">
 	<item name="vehicleWheels"/>
 </append>
+
+<!-- REMOVE DUPLICATES -->
 
 <!-- Remove Bob's specialty items to avoid duplication. -->
 <remove xpath="/traders/trader_info[@id='6']/trader_items/item[@group='groupVehicles']" />
@@ -59,9 +93,20 @@
 <!-- Remove vehicles from traderGeneral group to avoid duplication. -->
 <remove xpath="/traders/trader_item_groups/trader_item_group[@name='traderGeneral']/item[@group='groupVehicles']" />
 
-<!-- Set all horses from Telric's Horses to be always for sale. -->
+<!-- *** TELRICS HORSES -->
+
+<!-- Use conditional. -->
+
 <conditional>
 	<if cond="mod_loaded('Telrics_Horses_V2')">
+
+<!-- Set all horses to be for sale at all game stages.  horseFLTR is set in items.xml -->
+		<append xpath="/traders/traderstage_templates">
+				<traderstage_template name="horseFLTR">
+					<entry min="1" max="999999" quality="0"/>
+				</traderstage_template>
+		</append>
+<!-- Set all horses to be always for sale. -->
 		<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
 			<item name="vehicleLightBrownHorsePlaceable"/>
 			<item name="vehicleDarkBrownHorsePlaceable"/>
@@ -72,5 +117,19 @@
 		</append>
 	</if>
 </conditional>
+
+<!-- *** BDUBYAHS VEHICLES  -->
+
+<!-- Use conditional with or without includes. -->
+
+
+<!-- *** Server-side VEHICLES  -->
+
+<!-- Use conditional with or without includes. -->
+
+
+<!-- *** Other VEHICLES  -->
+
+<!-- Use conditional with or without includes. -->
 
 </BuyVehiclesModsPartsOnDayOne>
