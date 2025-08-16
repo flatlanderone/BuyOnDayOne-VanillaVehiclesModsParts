@@ -1,3 +1,5 @@
+[[_TOC_]]
+
 # Buy On Day One - Vanilla Vehicles, Mods and Parts
 
 Buy On Day One - Vanilla Vehicles, Mods and Parts lets you buy all vanilla vehicles, vehicle mods and vehicle parts from each trader starting on your first day in the zombie apocalypse. 
