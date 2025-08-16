@@ -20,3 +20,7 @@ Buy On Day One - Vanilla Vehicles, Mods and Parts lets you buy all vanilla vehic
 1. Buy On Day One - Telrics Horses: https://github.com/flatlanderone/TelricsHorsesV2-BuyOnDayOneFLTR
 2. Buy On Day One - TMO Vehicles: https://github.com/flatlanderone/V2-BuyOnDayOne-TMOVehiclesFLTR
 
+
+## Roadmap
+1. Implement turning on and off any of the item categories using Gears. 
+2. Release a vehicle parts only version. 
