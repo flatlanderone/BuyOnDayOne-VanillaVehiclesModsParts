@@ -1,0 +1,30 @@
+<BuyVehiclesModsPartsOnDayOne>
+
+<!-- Approach
+1. Set items to be for sale at all game stages in traders.xml.
+2. Set items to be always for sale by adding them to traderAlways trader_item_group in traders.xml.
+3. If needed (e.g. because traderstage_template too extensive), create new traderstage_template with distinct attribute (e.g. partVehicleFLTR or modVehicleFLTR) in traders.xml and apply new attribute to items in items.xml and item_modifiers.xml. -->
+
+<!-- *** TMO vehicles -->
+
+<!-- Set all TMO vehicles to be always for sale. -->
+<!-- TO DO: add gunBotT3JunkDrone  -->
+
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
+		<item name="TheMeanOne_FlyableDronePlaceable"/>
+		<item name="TheMeanOne_FlyableVanPlaceable"/>
+		<item name="TheMeanOne_Driveable3SeatTrikePlaceable"/>
+		<item name="TheMeanOne_DriveableWheelchairPlaceable"/>
+		<item name="TheMeanOne_DriveableDragulaPlaceable"/>
+		<item name="TheMeanOne_DriveableSUVPlaceable"/>
+		<item name="TheMeanOne_DriveablePickupTruckPlaceable"/>
+		<item name="TheMeanOne_DriveableSemiTruckPlaceable"/>
+		<item name="vehicleTM1DeathRiderPlaceable"/>
+		<item name="vehicleTM1GhoulCruiserPlaceable"/>
+		<item name="vehicleTM1MeanBusPlaceable"/>
+		<item name="vehicleTm1Flyer1Placeable"/>
+		
+</append>
+
+
+</BuyVehiclesModsPartsOnDayOne>

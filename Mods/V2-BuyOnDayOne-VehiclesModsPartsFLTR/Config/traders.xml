@@ -7,7 +7,7 @@
 
 <!-- *** VANILLA VEHICLES  -->
 
-<!-- Set all vehicles to be for sale at all game stages. Using vehicleTier0 to target vehicles.-->
+<!-- Set all vehicles to be for sale at all game stages. Using vehicleTierXX to target vehicles.-->
 <set xpath="/traders/traderstage_templates/traderstage_template[@name='vehicleTier0' or @name='vehicleTier1' or @name='vehicleTier2' or @name='vehicleTier3' or @name='vehicleTier4' or @name='vehicleTier5']">
 	<entry min="1" max="999999" quality="0"/>
 </set>
@@ -118,6 +118,19 @@
 	</if>
 </conditional>
 
+
+<!-- ***  TheMeanOnes ServerSide Vehicles V2  -->
+
+<!-- TO DO: move functionality to separate mod. -->
+
+<conditional>
+	<if cond="mod_loaded('TheMeanOnesServerSideVehiclesv2')">
+		<include filename="OtherVehicleMods/TheMeanOnesServerSideVehiclesv2/traders.xml" />
+	</if>
+</conditional>
+
+<!-- Use conditional with or without includes. -->
+
 <!-- *** BDUBYAHS VEHICLES  -->
 
 <!-- Use conditional with or without includes. -->
@@ -126,6 +139,8 @@
 <!-- *** Server-side VEHICLES  -->
 
 <!-- Use conditional with or without includes. -->
+
+
 
 
 <!-- *** Other VEHICLES  -->

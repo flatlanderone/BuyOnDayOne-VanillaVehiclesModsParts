@@ -1,5 +1,11 @@
 Buy On Day One - Vehicles, Mods and Parts lets you buy all vanilla vehicles, vehicle mods and vehicle parts from each trader starting on your first day in the zombie apocalypse. 
 
+
+Supported Vehicle Mods
+
+1. Telrics Horses V2
+2. TMO Vehicles
+
 Important Notes 
 1. If you install Buy On Day One modlets in an existing world, you must reset the trader's inventory using console commands or wait for the trader to reset according to his normal schedule.
 2. Not tested in multiplayer.

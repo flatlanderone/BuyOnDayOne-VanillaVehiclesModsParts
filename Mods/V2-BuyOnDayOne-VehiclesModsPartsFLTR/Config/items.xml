@@ -8,11 +8,23 @@
 
 <!-- *** Telrics Horses -->
 
+<!-- Functionality moved to TelricsHorsesV2-BuyOnDayOneFLTR https://github.com/flatlanderone/TelricsHorsesV2-BuyOnDayOneFLTR and Nexus Mods.  -->
+
 <!-- Changed TraderStageTemplate attribute to avoid making bicycles and bicycle parts always for sale. -->
 
-<conditional>
+<!-- <conditional>
 	<if cond="mod_loaded('Telrics_Horses_V2')">
 <setattribute xpath="/items/item[contains(@name,'Horse')]/property[@name='TraderStageTemplate']" name="value">horseFLTR</setattribute>
+	</if>
+</conditional> -->
+
+<!-- *** TMO Vehicles  -->
+
+<!-- TO DO: move functionality to separate mod -->
+
+<conditional>
+	<if cond="mod_loaded('TheMeanOnesServerSideVehiclesv2')">
+		<include filename="OtherVehicleMods/TheMeanOnesServerSideVehiclesv2/items.xml" />
 	</if>
 </conditional>
 
