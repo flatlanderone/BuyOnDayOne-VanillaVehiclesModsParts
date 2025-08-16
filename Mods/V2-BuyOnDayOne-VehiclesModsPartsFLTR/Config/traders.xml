@@ -101,20 +101,20 @@
 	<if cond="mod_loaded('Telrics_Horses_V2')">
 
 <!-- Set all horses to be for sale at all game stages.  horseFLTR is set in items.xml -->
-		<append xpath="/traders/traderstage_templates">
+<!-- 		<append xpath="/traders/traderstage_templates">
 				<traderstage_template name="horseFLTR">
 					<entry min="1" max="999999" quality="0"/>
 				</traderstage_template>
-		</append>
+		</append> -->
 <!-- Set all horses to be always for sale. -->
-		<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
+<!-- 		<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
 			<item name="vehicleLightBrownHorsePlaceable"/>
 			<item name="vehicleDarkBrownHorsePlaceable"/>
 			<item name="vehicleMilkBrownHorsePlaceable"/>
 			<item name="vehicleWhiteDotHorsePlaceable"/>
 			<item name="vehicleWhiteHorsePlaceable"/>
 			<item name="vehicleYellowHorsePlaceable"/>
-		</append>
+		</append> -->
 	</if>
 </conditional>
 
