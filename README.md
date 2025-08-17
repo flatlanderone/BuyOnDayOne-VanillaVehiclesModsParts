@@ -1,26 +1,35 @@
-[[_TOC_]]
+# Buy On Day One mods for 7 Days To Die v2
 
-# Buy On Day One - Vanilla Vehicles, Mods and Parts
-
+## Buy On Day One - Vanilla Vehicles, Mods and Parts
 Buy On Day One - Vanilla Vehicles, Mods and Parts lets you buy all vanilla vehicles, vehicle mods and vehicle parts from each trader starting on your first day in the zombie apocalypse. 
 
+## Buy On Day One - Vehicle Parts and Mods
+1. Buy On Day One - Vehicle Parts and Mods lets you buy all vanilla vehicle parts and vehicle mods starting on your first day in the zombie apocalypse. 
+2. All traders carry bicycle and minibike parts.
+3. Trader Bob has also all the parts for the Motorcycle, the 4x4 Truck, and the Gyrocopter and all the vehicle mods. 
+4. Traders will NOT carry complete vehicles (to be confirmed).
+
 ## Important Notes 
-1. If you install any of the Buy On Day One modlets in an existing world, you must reset the trader's inventory using console commands or wait for the trader to reset according to his normal schedule.
+1. If you install any of the Buy On Day One mods in an existing world, you must reset the trader's inventory using console commands or wait for the trader to reset according to his normal schedule.
 2. Not tested in multiplayer.
-3. Removing the mod is probably safe, but you probably should reset the trader's inventory using console commands or wait for the trader to reset according to his normal schedule.
+3. The mods should not affect other vehicle mods (to be confirmed).
+4. Removing the mods is probably safe, but you probably should reset the trader's inventory using console commands or wait for the trader to reset according to his normal schedule.
 
 ## Requirements
  7 Days to Die v2.0 and later.
 
-## My other Buy On Day One mods on Nexus Mods:
-1. Buy On Day One - Telrics Horses: TBD
-2. Buy On Day One - TMO Vehicles: TBD
+## All Buy On Day One mods on Nexus Mods:
+1. Buy On Day One - Vanilla Vehicles, Mods and Parts: TBD
+2. Buy On Day One - Vehicle Parts and Mods: TBD
+3. Buy On Day One - Telrics Horses: TBD
+4. Buy On Day One - TMO Vehicles: TBD
 
-## My other Buy On Day One mods on GitHub:
-1. Buy On Day One - Telrics Horses: https://github.com/flatlanderone/TelricsHorsesV2-BuyOnDayOneFLTR
-2. Buy On Day One - TMO Vehicles: https://github.com/flatlanderone/V2-BuyOnDayOne-TMOVehiclesFLTR
+## All Buy On Day One mods on GitHub:
+1. Buy On Day One - Vanilla Vehicles, Mods and Parts: https://github.com/flatlanderone/BuyOnDayOne-VanillaVehiclesModsParts
+2. Buy On Day One - Vehicle Parts and Mods: TBD
+3. Buy On Day One - Telrics Horses: https://github.com/flatlanderone/TelricsHorsesV2-BuyOnDayOneFLTR
+4. Buy On Day One - TMO Vehicles: https://github.com/flatlanderone/V2-BuyOnDayOne-TMOVehiclesFLTR
 
 
 ## Roadmap
-1. Implement turning on and off any of the item categories using Gears. 
-2. Release a vehicle parts only version. 
+1. Buy On Day One - Vanilla Vehicles, Mods and Parts: Implement turning on and off any of the item categories using Gears.

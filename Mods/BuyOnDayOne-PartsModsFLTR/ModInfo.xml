@@ -2,7 +2,7 @@
 <xml>
 	<Name value="BuyOnDayOne-PartsMods" />
 	<DisplayName value="Buy Vehicle Parts and Mods On Day One" />
-	<Description value="Vehicle parts and vehicle mods can be purchased from day 1." />
+	<Description value="Vanilla vehicle parts and vehicle mods can be purchased from day 1." />
 	<Author value="flatlander" />
 	<Version value="0.1.0.0" />
 	<Website value="https://github.com/flatlanderone/" />
