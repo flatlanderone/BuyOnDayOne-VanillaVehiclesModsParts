@@ -26,7 +26,7 @@ Buy On Day One - Vanilla Vehicles, Mods and Parts lets you buy all vanilla vehic
 
 ## All Buy On Day One mods on GitHub:
 1. Buy On Day One - Vanilla Vehicles, Mods and Parts: https://github.com/flatlanderone/BuyOnDayOne-VanillaVehiclesModsParts
-2. Buy On Day One - Vehicle Parts and Mods: TBD
+2. Buy On Day One - Vehicle Parts and Mods: https://github.com/flatlanderone/BuyOnDayOne-VanillaVehiclesModsParts
 3. Buy On Day One - Telrics Horses: https://github.com/flatlanderone/TelricsHorsesV2-BuyOnDayOneFLTR
 4. Buy On Day One - TMO Vehicles: https://github.com/flatlanderone/V2-BuyOnDayOne-TMOVehiclesFLTR
 
