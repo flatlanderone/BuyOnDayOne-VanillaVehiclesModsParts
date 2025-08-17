@@ -25,10 +25,12 @@ Buy On Day One - Vanilla Vehicles, Mods and Parts lets you buy all vanilla vehic
 ## Download links
 ### Buy On Day One - Vehicle Parts and Mods:
 https://www.nexusmods.com/7daystodie/mods/8371
+
 https://community.thefunpimps.com/resources/buy-on-day-one-vehicle-parts-and-mods.133/
 
-###Buy On Day One - Telrics Horses:
+### Buy On Day One - Telrics Horses:
 https://www.nexusmods.com/7daystodie/mods/8357
+
 https://community.thefunpimps.com/resources/buy-on-day-one-telrics-horses-v2.132/
 
 
