@@ -1,5 +1,9 @@
 # Buy On Day One mods for 7 Days To Die v2
 
+## About this repository
+This repository contains Buy On Day One mods for the vanilla version 7 Days To Die v2. 
+Buy On Day One mods extending other vehicle mods are kept in separate repositories.
+
 ## Buy On Day One - Vanilla Vehicles, Mods and Parts
 Buy On Day One - Vanilla Vehicles, Mods and Parts lets you buy all vanilla vehicles, vehicle mods and vehicle parts from each trader starting on your first day in the zombie apocalypse. 
 
