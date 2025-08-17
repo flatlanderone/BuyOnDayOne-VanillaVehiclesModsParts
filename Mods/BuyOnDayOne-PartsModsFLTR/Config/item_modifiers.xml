@@ -1,9 +1,13 @@
 <BuyVehiclesModsPartsOnDayOne>
 
+<!-- This mod will switch off if Buy On Day One - Vanilla Vehicles, Mods and Parts is loaded. -->
+<conditional>
+<if cond="mod_loaded('BuyOnDayOneVehiclesModsPartsFLTR') == false">
 <!-- *** VANILLA VEHICLE MODS -->
 
 <!-- Set modVehicleFLTR to allow targeting vehicle mods in traders.xml -->
 
 <setattribute xpath="/item_modifiers/item_modifier[starts-with(@name,'modVehicle')]/property[@name='TraderStageTemplate']" name="value">modVehicleFLTR</setattribute>
-
+</if>
+</conditional>
 </BuyVehiclesModsPartsOnDayOne>

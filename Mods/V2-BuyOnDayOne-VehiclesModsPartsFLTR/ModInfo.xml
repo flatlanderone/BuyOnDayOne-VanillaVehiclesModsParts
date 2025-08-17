@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<Name value="V2BuyOnDayOneVehiclesModsPartsFLTR" />
+	<Name value="BuyOnDayOneVehiclesModsPartsFLTR" />
 	<DisplayName value="Buy Vehicles, Vehicle Mods and Vehicle Parts On Day One V2" />
 	<Description value="All vehicles, vehicle mods and vehicle parts can be purchased at the trader from day 1." />
 	<Author value="flatlander" />

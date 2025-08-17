@@ -1,9 +1,15 @@
 <BuyVehiclesModsPartsOnDayOne>
 
+<!-- This mod will switch off if Buy On Day One - Vanilla Vehicles, Mods and Parts is loaded. -->
+<conditional>
+<if cond="mod_loaded('BuyOnDayOneVehiclesModsPartsFLTR') == false">
+
 <!-- *** VANILLA VEHICLE PARTS (Chassis, Handlebars and Accessories) -->
 
 <!-- Set partVehicleFLTR to allow targeting vehicle parts in traders.xml -->
 
 <setattribute xpath="/items/item[@name='vehicleBicycleHandlebars' or @name='vehicleBicycleChassis' or @name='vehicleMinibikeHandlebars' or @name='vehicleMinibikeChassis' or @name='vehicleMotorcycleHandlebars' or @name='vehicleMotorcycleChassis' or @name='vehicleTruck4x4Accessories' or @name='vehicleTruck4x4Chassis' or @name='vehicleGyroCopterAccessories' or @name='vehicleGyroCopterChassis']/property[@name='TraderStageTemplate']" name="value">partVehicleFLTR</setattribute>
 
+</if>
+</conditional>
 </BuyVehiclesModsPartsOnDayOne>

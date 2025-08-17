@@ -5,6 +5,11 @@
 2. Set items to be always for sale by adding them to traderAlways trader_item_group in traders.xml.
 3. If needed (e.g. because traderstage_template too extensive), create new traderstage_template with distinct attribute (e.g. partVehicleFLTR or modVehicleFLTR) in traders.xml and apply new attribute to items in items.xml and item_modifiers.xml. -->
 
+
+<!-- This mod will switch off if Buy On Day One - Vanilla Vehicles, Mods and Parts is loaded. -->
+<conditional>
+<if cond="mod_loaded('BuyOnDayOneVehiclesModsPartsFLTR') == false">
+
 <!-- *** VANILLA VEHICLE PARTS (Chassis, Handlebars and Accessories) -->
 
 <!-- Set all vehicle parts to be for sale at all game stages. Using partVehicleFLTR to target vehicle parts. partVehicleFLTR is set in items.xml -->
@@ -70,5 +75,9 @@
 
 <!-- Remove vehicles from traderGeneral group to avoid duplication. This may mean that traders will never carry complete vehicles.-->
 <remove xpath="/traders/trader_item_groups/trader_item_group[@name='traderGeneral']/item[@group='groupVehicles']" />
+
+</if>
+</conditional>
+
 
 </BuyVehiclesModsPartsOnDayOne>
