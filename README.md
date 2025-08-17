@@ -19,10 +19,8 @@ Buy On Day One - Vanilla Vehicles, Mods and Parts lets you buy all vanilla vehic
  7 Days to Die v2.0 and later.
 
 ## All Buy On Day One mods on Nexus Mods:
-1. Buy On Day One - Vanilla Vehicles, Mods and Parts: TBD
-2. Buy On Day One - Vehicle Parts and Mods: TBD
-3. Buy On Day One - Telrics Horses: TBD
-4. Buy On Day One - TMO Vehicles: TBD
+1. Buy On Day One - Vehicle Parts and Mods: https://www.nexusmods.com/7daystodie/mods/8371
+2. Buy On Day One - Telrics Horses: https://www.nexusmods.com/7daystodie/mods/8357
 
 ## All Buy On Day One mods on GitHub:
 1. Buy On Day One - Vanilla Vehicles, Mods and Parts: https://github.com/flatlanderone/BuyOnDayOne-VanillaVehiclesModsParts
