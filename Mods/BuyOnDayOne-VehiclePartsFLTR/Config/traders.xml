@@ -5,9 +5,6 @@
 2. Set items to be always for sale by adding them to traderAlways trader_item_group in traders.xml.
 3. If needed (e.g. because traderstage_template too extensive), create new traderstage_template with distinct attribute (e.g. partVehicleFLTR or modVehicleFLTR) in traders.xml and apply new attribute to items in items.xml and item_modifiers.xml. -->
 
-<!-- *** VANILLA VEHICLES  -->
-
-
 <!-- *** VANILLA VEHICLE PARTS (Chassis, Handlebars and Accessories) -->
 
 <!-- Set all vehicle parts to be for sale at all game stages. Using partVehicleFLTR to target vehicle parts. partVehicleFLTR is set in items.xml -->
@@ -26,15 +23,6 @@
 <!-- *** MINIBIKE PARTS -->
 	<item name="vehicleMinibikeChassis"/>
 	<item name="vehicleMinibikeHandlebars"/>
-<!-- *** MOTORCYCLE PARTS -->
-<!-- 	<item name="vehicleMotorcycleChassis"/>
-	<item name="vehicleMotorcycleHandlebars"/> -->
-<!-- *** 4x4 PARTS -->
-<!-- 	<item name="vehicleTruck4x4Chassis"/>
-	<item name="vehicleTruck4x4Accessories"/> -->
-<!-- *** GYRO PARTS -->
-<!-- 	<item name="vehicleGyroCopterChassis"/>
-	<item name="vehicleGyroCopterAccessories"/> -->
 </append>
 
 <!-- *** VANILLA VEHICLE MODS -->
@@ -48,17 +36,6 @@
 		<entry min="1" max="999999" quality="0"/>
 	</traderstage_template>
 </append>
-
-<!-- Set all vehicle mods to be always for sale. -->
-<!-- <append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
-	<item name="modVehicleFuelSaver"/>
-	<item name="modVehicleOffRoadHeadlights"/>
-	<item name="modVehicleSuperCharger"/>
-	<item name="modVehicleExpandedSeat"/>
-	<item name="modVehicleReserveFuelTank"/>
-	<item name="modVehiclePlow"/>
-	<item name="modVehicleArmor"/>
-</append> -->
 
 <!-- *** WHEELS -->
 
