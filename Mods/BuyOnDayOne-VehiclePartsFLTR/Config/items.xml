@@ -1,0 +1,30 @@
+<BuyVehiclesModsPartsOnDayOne>
+
+<!-- *** VANILLA VEHICLE PARTS (Chassis, Handlebars and Accessories) -->
+
+<!-- Set partVehicleFLTR to allow targeting vehicle parts in traders.xml -->
+
+<setattribute xpath="/items/item[@name='vehicleBicycleHandlebars' or @name='vehicleBicycleChassis' or @name='vehicleMinibikeHandlebars' or @name='vehicleMinibikeChassis' or @name='vehicleMotorcycleHandlebars' or @name='vehicleMotorcycleChassis' or @name='vehicleTruck4x4Accessories' or @name='vehicleTruck4x4Chassis' or @name='vehicleGyroCopterAccessories' or @name='vehicleGyroCopterChassis']/property[@name='TraderStageTemplate']" name="value">partVehicleFLTR</setattribute>
+
+<!-- *** Telrics Horses -->
+
+<!-- Functionality moved to TelricsHorsesV2-BuyOnDayOneFLTR https://github.com/flatlanderone/TelricsHorsesV2-BuyOnDayOneFLTR and Nexus Mods.  -->
+
+<!-- Changed TraderStageTemplate attribute to avoid making bicycles and bicycle parts always for sale. -->
+
+<!-- <conditional>
+	<if cond="mod_loaded('Telrics_Horses_V2')">
+<setattribute xpath="/items/item[contains(@name,'Horse')]/property[@name='TraderStageTemplate']" name="value">horseFLTR</setattribute>
+	</if>
+</conditional> -->
+
+<!-- *** TMO Vehicles  -->
+
+<!-- Functionality moved to xxx-BuyOnDayOneFLTR https://github.com/flatlanderone/ and Nexus Mods.  -->
+
+
+<!-- *** NON VANILLA VEHICLE PARTS (custom Chassis, Handlebars and Accessories) -->
+
+<!-- Use conditional with or without includes. -->
+
+</BuyVehiclesModsPartsOnDayOne>

@@ -1,0 +1,137 @@
+<BuyVehiclesModsPartsOnDayOne>
+
+<!-- Approach
+1. Set items to be for sale at all game stages in traders.xml.
+2. Set items to be always for sale by adding them to traderAlways trader_item_group in traders.xml.
+3. If needed (e.g. because traderstage_template too extensive), create new traderstage_template with distinct attribute (e.g. partVehicleFLTR or modVehicleFLTR) in traders.xml and apply new attribute to items in items.xml and item_modifiers.xml. -->
+
+<!-- *** VANILLA VEHICLES  -->
+
+
+<!-- *** VANILLA VEHICLE PARTS (Chassis, Handlebars and Accessories) -->
+
+<!-- Set all vehicle parts to be for sale at all game stages. Using partVehicleFLTR to target vehicle parts. partVehicleFLTR is set in items.xml -->
+<append xpath="/traders/traderstage_templates">
+	<traderstage_template name="partVehicleFLTR">
+		<entry min="1" max="999999" quality="0"/>
+	</traderstage_template>
+</append>
+
+<!-- Set bicycle and mminibike parts to be always for sale. Engine and wheels are still available in rareTools group. -->
+
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
+<!-- *** BICYCLE PARTS -->
+	<item name="vehicleBicycleChassis"/>
+	<item name="vehicleBicycleHandlebars"/>
+<!-- *** MINIBIKE PARTS -->
+	<item name="vehicleMinibikeChassis"/>
+	<item name="vehicleMinibikeHandlebars"/>
+<!-- *** MOTORCYCLE PARTS -->
+<!-- 	<item name="vehicleMotorcycleChassis"/>
+	<item name="vehicleMotorcycleHandlebars"/> -->
+<!-- *** 4x4 PARTS -->
+<!-- 	<item name="vehicleTruck4x4Chassis"/>
+	<item name="vehicleTruck4x4Accessories"/> -->
+<!-- *** GYRO PARTS -->
+<!-- 	<item name="vehicleGyroCopterChassis"/>
+	<item name="vehicleGyroCopterAccessories"/> -->
+</append>
+
+<!-- *** VANILLA VEHICLE MODS -->
+
+<!-- Set all Vehicle mods to be for sale at all game stages. modVehicleFLTR is set in item_modifiers.xml  -->
+
+<!-- NOTE: In vanilla, only vehicle mod schematics are for sale. Mods must be looted or crafted. Oversight?   -->
+
+<append xpath="/traders/traderstage_templates">
+	<traderstage_template name="modVehicleFLTR">
+		<entry min="1" max="999999" quality="0"/>
+	</traderstage_template>
+</append>
+
+<!-- Set all vehicle mods to be always for sale. -->
+<!-- <append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
+	<item name="modVehicleFuelSaver"/>
+	<item name="modVehicleOffRoadHeadlights"/>
+	<item name="modVehicleSuperCharger"/>
+	<item name="modVehicleExpandedSeat"/>
+	<item name="modVehicleReserveFuelTank"/>
+	<item name="modVehiclePlow"/>
+	<item name="modVehicleArmor"/>
+</append> -->
+
+<!-- *** WHEELS -->
+
+<!-- Add wheels to rareTools group to maintain their availability. -->
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']">
+	<item name="vehicleWheels"/>
+</append>
+
+<!-- Reinforce Trader Bob's specialty. He has all the vehicle parts and all the vehicle mods.-->
+
+<!-- <remove xpath="/traders/trader_info[@id='6']/trader_items/item[@group='groupVehicles']" /> -->
+
+<set xpath="/traders/trader_info[@id='6']">
+
+<!-- *** SPECIALTY -->
+<trader_items count="all">
+<!-- <item group="groupVehicles" unique_only="true" count="2"/>	 -->
+	<!-- *** MOTORCYCLE PARTS -->
+	<item name="vehicleMotorcycleChassis"/>
+	<item name="vehicleMotorcycleHandlebars"/>
+	<!-- *** 4x4 PARTS -->
+	<item name="vehicleTruck4x4Chassis"/>
+	<item name="vehicleTruck4x4Accessories"/>
+	<!-- *** GYRO PARTS -->
+	<item name="vehicleGyroCopterChassis"/>
+	<item name="vehicleGyroCopterAccessories"/>
+	<!-- *** VEHICLE MODS -->
+	<item name="modVehicleFuelSaver"/>
+	<item name="modVehicleOffRoadHeadlights"/>
+	<item name="modVehicleSuperCharger"/>
+	<item name="modVehicleExpandedSeat"/>
+	<item name="modVehicleReserveFuelTank"/>
+	<item name="modVehiclePlow"/>
+	<item name="modVehicleArmor"/>
+	<!-- *** END OF EDIT -->			
+	<item group="traderRobotics" unique_only="true" count="2"/>
+	<item group="groupMeleeMods" unique_only="true" count="1,2"/>
+	<item group="tools" unique_only="true" count="10"/>
+	<item group="rareTools" unique_only="true" count="2,3"/>
+	<item group="traderElectrical" unique_only="true" count="8,15"/>
+	<item group="traderSolarCells" count="2,4"/>
+	<item group="skillMagazines" unique_only="true" count="7"/>
+	<item group="books" unique_only="true" count="3,4"/>
+	<item name="toolDewGatherer" count="1,3"/>
+	<item name="toolDewTarp" count="1,3"/>
+	<item name="toolDewFilter" count="1,3"/>
+	<item name="toolCookingPot" count="1,3"/>
+	<item name="toolCookingGrill" count="1,3"/>
+</trader_items>
+
+<!-- *** GENERAL -->
+<trader_items count="all">
+	<item group="traderAlways"/>
+	<item group="traderGeneral" count="4,10"/>
+	<item group="groupModsAll" unique_only="true" count="7,10"/>
+	<item group="tools" unique_only="true" count="10"/>
+	<item group="generalResources" count="5,8"/>
+	<item group="traderElectrical" unique_only="true" count="2,5"/>
+	<item group="traderSolarCells" count="2,4"/>
+	<item group="groupMeleeAll" count="5,7"/>
+	<item group="groupRangedAll" count="5,7"/>
+	<item group="weaponsGunParts" count="2,4"/>
+	<item name="armorParts" count="1,2"/>
+	<item name="resourceSewingKit" count="1,2"/>
+	<item group="groupArmorLight" unique_only="true" count="6"/>
+	<item group="groupArmorMedium" unique_only="true" count="6"/>
+	<item group="groupArmorHeavy" unique_only="true" count="6"/>
+	<item group="constructionSupplies" count="2,4"/>
+	<item group="decorativeBlocks" unique_only="true" count="6,10"/>
+</trader_items>
+</set>
+
+<!-- Remove vehicles from traderGeneral group to avoid duplication. -->
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='traderGeneral']/item[@group='groupVehicles']" />
+
+</BuyVehiclesModsPartsOnDayOne>
