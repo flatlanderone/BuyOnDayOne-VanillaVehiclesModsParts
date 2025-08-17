@@ -6,8 +6,4 @@
 
 <setattribute xpath="/item_modifiers/item_modifier[starts-with(@name,'modVehicle')]/property[@name='TraderStageTemplate']" name="value">modVehicleFLTR</setattribute>
 
-<!-- *** NON VANILLA VEHICLE MODS  -->
-
-<!-- Use conditional with or without includes. -->
-
 </BuyVehiclesModsPartsOnDayOne>
