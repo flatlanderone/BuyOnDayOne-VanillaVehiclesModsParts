@@ -1,0 +1,24 @@
+<RamblingMan>
+<set xpath="/dialogs/dialog[@id='junkDrone']">
+
+	<!-- Statements -->
+<statement id="start" text="dialog_trader_statement_start">
+	<response_entry id="shop" />
+	<response_entry id="done" />
+</statement>
+	
+	<!-- Responses -->
+<!-- Open drone storage  -->
+
+	<response id="shop" text="dialog_trader_response_shop">
+		<action type="Trader" id="drone_storage" />
+	</response>
+	
+<!-- <response id="shop" text="dialog_trader_response_shop">
+	<action type="Trader" id="trade" />
+</response> -->
+	
+<response id="done" text="dialog_trader_response_nevermind" />
+</set>
+</RamblingMan>
+

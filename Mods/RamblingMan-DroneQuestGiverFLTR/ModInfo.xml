@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="RamblingMan-DroneQuestGiverFLTR" />
+	<DisplayName value="Rambling Man - Drone Quest Giver" />
+	<Description value="The robotic drone can now give you quests." />
+	<Author value="flatlander" />
+	<Version value="0.1.0.0" />
+	<Website value="https://github.com/flatlanderone/" />
+</xml>

@@ -1,0 +1,14 @@
+<RamblingMan>
+
+<append xpath="/entity_classes">
+
+<!-- *** PORTABLETRADER -->
+<entity_class name="npcPORTABLETRADER" extends="npcTraderTemplate">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,npc,human,trader"/>
+	<property name="Mesh" value="@:Entities/Traders/Prefabs/TraderJoel.prefab"/>
+	<property name="NPCID" value="PORTABLETRADERFTLR"/>
+	<property name="DanceType" value="1"/>
+</entity_class>
+</append>
+</RamblingMan>
