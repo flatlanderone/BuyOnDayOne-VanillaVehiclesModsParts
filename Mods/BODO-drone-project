@@ -29,4 +29,14 @@
         </Folder>
         <Folder name="Putput Files" />
     </Project>
+    <Project name="DroneDialogTrader">
+        <Folder name="Vanilla">
+            <File name="D:\SteamLibrary\steamapps\common\7 Days To Die\Data\Config\dialogs.xml" />
+            <File name="D:\SteamLibrary\steamapps\common\7 Days To Die\Data\Config\npc.xml" />
+        </Folder>
+        <Folder name="Mod Files">
+            <File name="RamblingMan-DroneQuestGiverFLTR\Config\dialogs.xml" />
+            <File name="RamblingMan-DroneQuestGiverFLTR\Config\npc.xml" />
+        </Folder>
+    </Project>
 </NotepadPlus>
