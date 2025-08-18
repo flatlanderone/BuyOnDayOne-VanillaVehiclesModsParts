@@ -2,6 +2,16 @@
 
 <append xpath="/recipes">
 
-
+<recipe name="gunBotT3JunkDrone" count="1" tags="perkTurrets,packMuleCrafting">
+	<ingredient name="vehicleDroneChassisFLTR" count="1"/>
+	<ingredient name="vehicleDroneAccessoriesFLTR" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="resourceDuctTape" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="0"/>
+<!-- 	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value="1,5" tags="gunBotRoboticsParts,resourceForgedSteel,resourceDuctTape,resourceElectricParts"/>
+		<passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
+	</effect_group> -->
+</recipe>
 
 </RamblingMan>
