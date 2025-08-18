@@ -1,0 +1,14 @@
+<NotepadPlus>
+    <Project name="BODO Drone">
+        <Folder name="Mod Files">
+            <File name="BuyOnDayOne-DroneModsFLTR\Config\item_modifiers.xml" />
+            <File name="BuyOnDayOne-DroneModsFLTR\Config\items.xml" />
+            <File name="BuyOnDayOne-DroneModsFLTR\Config\traders.xml" />
+        </Folder>
+        <Folder name="Vanilla files">
+            <File name="D:\SteamLibrary\steamapps\common\7 Days To Die\Data\Config\item_modifiers.xml" />
+            <File name="D:\SteamLibrary\steamapps\common\7 Days To Die\Data\Config\items.xml" />
+            <File name="D:\SteamLibrary\steamapps\common\7 Days To Die\Data\Config\traders.xml" />
+        </Folder>
+    </Project>
+</NotepadPlus>

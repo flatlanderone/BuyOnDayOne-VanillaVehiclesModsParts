@@ -1,0 +1,74 @@
+<BuyVehiclesModsPartsOnDayOne>
+
+<!-- Approach
+1. Set items to be for sale at all game stages in traders.xml.
+2. Set items to be always for sale by adding them to traderAlways trader_item_group in traders.xml.
+3. If needed (e.g. because traderstage_template too extensive), create new traderstage_template with distinct attribute (e.g. partVehicleFLTR or modVehicleFLTR) in traders.xml and apply new attribute to items in items.xml and item_modifiers.xml. -->
+
+<!-- *** VANILLA DRONE  -->
+<!-- <item name="gunBotT3JunkDrone" quality="1,5"/> -->
+<!-- Set the Q1 drone to be for sale at all game stages. Using droneFLTR to target in items.xml.  -->
+
+<append xpath="/traders/traderstage_templates">
+	<traderstage_template name="droneFLTR">
+
+		<entry min="1" max="999999" quality="1"/>
+	</traderstage_template>
+</append>
+
+<!-- Set Q1 drone to be always for sale. -->
+<prepend xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
+	<item name="gunBotT3JunkDrone" quality="1"/>
+</prepend>
+
+<!-- *** VANILLA DRONE PARTS (Chassis, Handlebars and Accessories) -->
+
+<!-- Set all drone parts to be for sale at all game stages. Using partDroneFLTR to target drone parts. partVehicleFLTR is set in items.xml -->
+<!-- <append xpath="/traders/traderstage_templates">
+	<traderstage_template name="partDroneFLTR">
+		<entry min="1" max="999999" quality="0"/>
+	</traderstage_template>
+</append> -->
+
+<!-- Set vehicle parts, such as Chassis, Handlebars and Accessories to be always for sale.  -->
+
+
+<!-- *** VANILLA DRONE MODS -->
+
+<!-- Set all drone mods to be for sale at all game stages. modDroneFLTR is set in item_modifiers.xml  -->
+
+<!-- NOTE: In vanilla, only drone mod schematics are for sale. Mods must be looted or crafted. Oversight?   -->
+
+<append xpath="/traders/traderstage_templates">
+	<traderstage_template name="modDroneFLTR">
+		<entry min="1" max="999999" quality="0"/>
+	</traderstage_template>
+</append>
+
+<!-- Set all drone mods to be always for sale. -->
+<prepend xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
+	<item name="modRoboticDroneArmorPlatingMod" />
+	<item name="modRoboticDroneCargoMod"/>
+	<item name="modRoboticDroneMoraleBoosterMod" />
+	<item name="modRoboticDroneHeadlampMod" />
+	<item name="modRoboticDroneMedicMod" />
+<!-- 	<item name="modRoboticDroneWeaponMod" />
+	<item name="modRoboticDroneStunWeaponMod" /> -->
+</prepend>
+
+<!-- *** WHEELS -->
+
+<!-- Add wheels to rareTools group to maintain their availability. -->
+<!-- <append xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']">
+	<item name="vehicleWheels"/>
+</append> -->
+
+<!-- REMOVE DUPLICATES -->
+
+<!-- Remove Bob's specialty items to avoid duplication. -->
+<!-- <remove xpath="/traders/trader_info[@id='6']/trader_items/item[@group='groupVehicles']" /> -->
+
+<!-- Remove vehicles from traderGeneral group to avoid duplication. -->
+<!-- <remove xpath="/traders/trader_item_groups/trader_item_group[@name='traderGeneral']/item[@group='groupVehicles']" /> -->
+
+</BuyVehiclesModsPartsOnDayOne>

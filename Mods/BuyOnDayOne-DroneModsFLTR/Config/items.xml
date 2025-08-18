@@ -1,0 +1,10 @@
+<BuyVehiclesModsPartsOnDayOne>
+
+<!-- *** VANILLA DRONE -->
+
+<!-- Set droneFLTR to allow targeting the drone in traders.xml -->
+
+<setattribute xpath="/items/item[@name='gunBotT3JunkDrone']/property[@name='TraderStageTemplate']" name="value">droneFLTR</setattribute>
+
+
+</BuyVehiclesModsPartsOnDayOne>

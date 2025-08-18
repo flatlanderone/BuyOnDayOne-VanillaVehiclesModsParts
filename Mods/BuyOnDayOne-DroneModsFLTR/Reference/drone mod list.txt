@@ -1,0 +1,7 @@
+<item name="modRoboticDroneArmorPlatingMod" />
+<item name="modRoboticDroneCargoMod"/>
+<item name="modRoboticDroneMoraleBoosterMod" />
+<item name="modRoboticDroneHeadlampMod" />
+<item name="modRoboticDroneMedicMod" />
+<item name="modRoboticDroneWeaponMod" />
+<item name="modRoboticDroneStunWeaponMod" />

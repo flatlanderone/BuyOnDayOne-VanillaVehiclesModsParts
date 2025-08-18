@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="BuyOnDayOne-DroneModsFLTR" />
+	<DisplayName value="Buy The Robotic Drone and Mods On Day One" />
+	<Description value="The robotic drone and all its mods can be purchased at the trader from day 1." />
+	<Author value="flatlander" />
+	<Version value="0.1.0.0" />
+	<Website value="https://github.com/flatlanderone/" />
+</xml>
