@@ -2,7 +2,7 @@
 
 ## About this repository
 This repository contains Buy On Day One mods for the vanilla version 7 Days To Die v2. 
-Buy On Day One mods extending other vehicle mods are kept in separate repositories.
+Buy On Day One mods extending other vehicle mods are kept here: https://github.com/flatlanderone/BuyOnDayOne-ModExtensions.
 
 ## Buy On Day One - Vanilla Vehicles, Mods and Parts
 Buy On Day One - Vanilla Vehicles, Mods and Parts lets you buy all vanilla vehicles, vehicle mods and vehicle parts from each trader starting on your first day in the zombie apocalypse. 
@@ -22,9 +22,16 @@ Buy On Day One - Vanilla Vehicles, Mods and Parts lets you buy all vanilla vehic
 ## Requirements
  7 Days to Die v2.0 and later.
 
-## All Buy On Day One mods on Nexus Mods:
-1. Buy On Day One - Vehicle Parts and Mods: https://www.nexusmods.com/7daystodie/mods/8371
-2. Buy On Day One - Telrics Horses: https://www.nexusmods.com/7daystodie/mods/8357
+## Download links
+### Buy On Day One - Vehicle Parts and Mods:
+https://www.nexusmods.com/7daystodie/mods/8371
+
+https://community.thefunpimps.com/resources/buy-on-day-one-vehicle-parts-and-mods.133/
+
+### Buy On Day One - Telrics Horses:
+https://www.nexusmods.com/7daystodie/mods/8357
+
+https://community.thefunpimps.com/resources/buy-on-day-one-telrics-horses-v2.132/
 
 
 ## Roadmap
