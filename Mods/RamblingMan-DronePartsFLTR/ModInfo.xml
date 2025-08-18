@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="RamblingMan-DronePartsFLTR" />
+	<DisplayName value="Rambling Man - Drone Parts" />
+	<Description value="The robotic drone can now be crafted with Drone Parts." />
+	<Author value="flatlander" />
+	<Version value="0.1.0.0" />
+	<Website value="https://github.com/flatlanderone/" />
+</xml>

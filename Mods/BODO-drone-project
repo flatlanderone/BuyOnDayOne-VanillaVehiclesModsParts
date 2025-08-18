@@ -10,5 +10,23 @@
             <File name="D:\SteamLibrary\steamapps\common\7 Days To Die\Data\Config\items.xml" />
             <File name="D:\SteamLibrary\steamapps\common\7 Days To Die\Data\Config\traders.xml" />
         </Folder>
+        <Folder name="Output">
+            <File name="C:\Users\AMD\AppData\Roaming\7DaysToDieBackpack\Saves\Navezgane\bpc001\ConfigsDump\item_modifiers.xml" />
+            <File name="C:\Users\AMD\AppData\Roaming\7DaysToDieBackpack\Saves\Navezgane\bpc001\ConfigsDump\items.xml" />
+            <File name="C:\Users\AMD\AppData\Roaming\7DaysToDieBackpack\Saves\Navezgane\bpc001\ConfigsDump\traders.xml" />
+        </Folder>
+    </Project>
+    <Project name="DroneParts">
+        <Folder name="Mod Files">
+            <File name="RamblingMan-DronePartsFLTR\Config\items.xml" />
+            <File name="RamblingMan-DronePartsFLTR\Config\recipes.xml" />
+            <File name="RamblingMan-DronePartsFLTR\Config\loot.xml" />
+        </Folder>
+        <Folder name="Vanilla Files">
+            <File name="D:\SteamLibrary\steamapps\common\7 Days To Die\Data\Config\items.xml" />
+            <File name="D:\SteamLibrary\steamapps\common\7 Days To Die\Data\Config\loot.xml" />
+            <File name="D:\SteamLibrary\steamapps\common\7 Days To Die\Data\Config\recipes.xml" />
+        </Folder>
+        <Folder name="Putput Files" />
     </Project>
 </NotepadPlus>
