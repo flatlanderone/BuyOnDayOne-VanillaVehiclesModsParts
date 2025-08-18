@@ -3,8 +3,8 @@
 <append xpath="/npc">
 	<npc_info
 		id="npcPORTABLETRADER"
-		name="Junk Drone"
-		name_key="npc_junkDrone"
+		name="PORTABLE TRADER"
+		name_key="npc_PORTABLETRADER"
 		faction="trader"
 		portrait="npc_joel"
 		greeting_type="nearby"
