@@ -13,5 +13,8 @@
 		<passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
 	</effect_group> -->
 </recipe>
+
+<!-- ADD recipe for vehicleDroneChassisFLTR and vehicleDroneAccessoriesFLTR -->
+
 </append>
 </RamblingMan>
