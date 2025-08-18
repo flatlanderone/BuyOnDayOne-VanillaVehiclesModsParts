@@ -13,5 +13,5 @@
 		<passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
 	</effect_group> -->
 </recipe>
-
+</append>
 </RamblingMan>

@@ -5,16 +5,16 @@
 <!-- <item name="vehicleMinibikeChassis"> -->
 <item name="vehicleDroneChassisFLTR">
 	<property name="Extends" value="vehicleWheels"/>
-		<property name="Tags" value="roboticsSkill"/>
+	<property name="Tags" value="roboticsSkill"/>
 	<property name="EconomicValue" value="2250"/>
 	<property name="TraderStageTemplate" value="vehicleTier1"/><!-- vehicleMinibikeChassis -->
 	<property name="CustomIcon" value="gunBotT3JunkDrone"/>
 	<property name="TintColor" value="107, 107, 71"/>
-	<!-- <property name="UnlockedBy" value="craftingRobotics"/> <!-- perkTurrets,vehicleDroneChassisFLTRSchematic, --> -->
+<!-- <property name="UnlockedBy" value="craftingRobotics"/>  -->
+	<!-- perkTurrets,vehicleDroneChassisFLTRSchematic, -->
 	<property name="SoundPickup" value="chassis_grab"/>
 	<property name="SoundPlace" value="chassis_place"/>
 </item>
-
 
 <item name="vehicleDroneAccessoriesFLTR">
 	<property name="Extends" value="vehicleWheels"/>
@@ -23,7 +23,8 @@
 	<property name="TraderStageTemplate" value="vehicleTier1"/><!-- vehicleMinibikeChassis -->
 	<property name="CustomIcon" value="vehicleTruck4x4Accessories"/>
 	<property name="TintColor" value="107, 107, 71"/>
-	<!-- <property name="UnlockedBy" value="craftingRobotics"/> <!-- perkTurrets,vehicleDroneChassisFLTRSchematic, --> -->
+<!-- <property name="UnlockedBy" value="craftingRobotics"/>  -->
+	<!-- perkTurrets,vehicleDroneChassisFLTRSchematic, -->
 	<property name="SoundPickup" value="handlebars_grab"/>
 	<property name="SoundPlace" value="handlebars_place"/>
 </item>

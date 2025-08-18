@@ -1,7 +1,18 @@
 <RamblingMan>
 
-<!-- <append xpath="/recipes"> -->
+<append xpath="/lootcontainers">
+<!-- *** Drone_Parts -->
+<lootgroup name="droneParts">
+	<item name="vehicleDroneChassisFLTR"/>
+	<item name="vehicleDroneAccessoriesFLTR"/>
+	<item name="carBattery"/>
+</lootgroup>
+</append>
 
+<!-- *** Vehicle_Parts_Scaled: added Drone Parts -->
 
+<append xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">
+	<item group="droneParts" loot_prob_template="ProbT1Cap"/>
+</append>
 
 </RamblingMan>
