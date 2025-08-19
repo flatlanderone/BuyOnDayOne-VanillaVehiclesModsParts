@@ -1,4 +1,27 @@
 <NotepadPlus>
+    <Project name="VANILLA CONFIG" />
+    <Project name="Books">
+        <Folder name="Mod Files">
+            <Folder name="Config">
+                <Folder name="progressionchanges">
+                    <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\progressionchanges\newbooks.xml" />
+                    <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\progressionchanges\newperks.xml" />
+                    <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\progressionchanges\vanillaperks.xml" />
+                </Folder>
+                <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\7DaysToDie Backpack.lnk" />
+                <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\blocks.xml" />
+                <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\gameevents.xml" />
+                <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\items.xml" />
+                <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\Localization.txt" />
+                <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\loot.xml" />
+                <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\progression.xml" />
+                <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\quests.xml" />
+                <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\recipes.xml" />
+            </Folder>
+            <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\ModInfo.xml" />
+        </Folder>
+        <Folder name="Vanilla" />
+    </Project>
     <Project name="BODO Drone">
         <Folder name="Mod Files">
             <File name="BuyOnDayOne-DroneModsFLTR\Config\item_modifiers.xml" />
@@ -40,4 +63,13 @@
         </Folder>
     </Project>
     <Project name="CarDisassemble" />
+    <Project name="TEMPLATE">
+        <Folder name="template">
+            <Folder name="Config">
+                <File name="ModTemplate\Config\modifiedfile.xml" />
+            </Folder>
+            <File name="ModTemplate\ModInfo.xml" />
+            <File name="ModTemplate\readme.md" />
+        </Folder>
+    </Project>
 </NotepadPlus>
