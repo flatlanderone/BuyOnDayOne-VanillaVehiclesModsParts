@@ -39,4 +39,5 @@
             <File name="RamblingMan-DroneQuestGiverFLTR\Config\npc.xml" />
         </Folder>
     </Project>
+    <Project name="CarDisassemble" />
 </NotepadPlus>

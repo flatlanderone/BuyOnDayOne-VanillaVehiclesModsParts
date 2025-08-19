@@ -1,0 +1,37 @@
+<RamblingMan>
+<BODO>
+
+<append xpath="/recipes"></append>
+
+<prepend xpath="/recipes"></prepend>
+
+<set xpath="/recipes"></set>
+
+<remove xpath="/recipes"></remove>
+
+<setattribute xpath="/recipes"></setattribute>
+
+<setattribute xpath="/./.[starts-with(@name,'xxx')]/property[@name='YYY']" name="value">loreipsumFLTR</setattribute>
+
+<!-- If mod not loaded -->
+<conditional>
+<if cond="mod_loaded('modname') == false">
+
+</if>
+</conditional>
+
+<!-- If mod loaded -->
+<conditional>
+<if cond="mod_loaded('modname')">
+
+</if>
+</conditional>
+
+
+
+
+</BODO>
+</RamblingMan>
+
+
+
