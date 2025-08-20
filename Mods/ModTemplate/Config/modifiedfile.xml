@@ -3,11 +3,11 @@
 
 <append xpath="/recipes"></append>
 
-<prepend xpath="/recipes"></prepend>
+<prepend xpath="/items"></prepend>
 
-<set xpath="/recipes"></set>
+<set xpath="/quests"></set>
 
-<remove xpath="/recipes"></remove>
+<remove xpath="/item_modifiers"></remove>
 
 <setattribute xpath="/recipes"></setattribute>
 
@@ -28,7 +28,9 @@
 </conditional>
 
 
+<include>
 
+</include>
 
 </BODO>
 </RamblingMan>
