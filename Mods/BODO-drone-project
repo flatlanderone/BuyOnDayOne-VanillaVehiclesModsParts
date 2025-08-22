@@ -72,6 +72,7 @@
     </Project>
     <Project name="Books">
         <Folder name="Mod Files">
+            <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\ModInfo.xml" />
             <Folder name="Config">
                 <Folder name="progressionchanges">
                     <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\progressionchanges\newbooks.xml" />
@@ -84,11 +85,12 @@
                 <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\items.xml" />
                 <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\Localization.txt" />
                 <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\loot.xml" />
+                <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\pipe bomb v1.txt" />
                 <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\progression.xml" />
                 <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\quests.xml" />
                 <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\recipes.xml" />
+                <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\Config\ui_display.xml" />
             </Folder>
-            <File name="D:\Dropbox\fahve\design\repo\Rambling-Man-Mods\Mods\RamblingManBooks\ModInfo.xml" />
         </Folder>
         <Folder name="Vanilla" />
     </Project>
